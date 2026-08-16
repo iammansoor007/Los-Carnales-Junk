@@ -577,10 +577,12 @@ const Hero = () => {
           animate={{ scale: 1 }}
           transition={{ duration: 10, ease: "easeOut" }}
           className="w-full h-full object-cover absolute inset-0 will-change-transform"
-          style={{ opacity: 0.55 }}
+          style={{ opacity: 0.7 }}
         />
         {/* Subtle radial orange glow top-right */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full" style={{ background: "radial-gradient(circle, rgba(249,115,22,0.12) 0%, transparent 70%)" }} />
+        {/* Left-side dark overlay for text readability */}
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 45%, transparent 75%)" }} />
         {/* Bottom fade to white */}
         <div className="absolute bottom-0 left-0 w-full h-40" style={{ background: "linear-gradient(to top, #FFFFFF, transparent)" }} />
         {/* Dot grid pattern */}
@@ -595,7 +597,7 @@ const Hero = () => {
 
               <motion.h1
                 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.75rem] font-black leading-[1.08] tracking-tight uppercase mt-10"
-                style={{ color: "#1E293B", fontFamily: "var(--font-heading)" }}
+                style={{ color: "#FFFFFF", fontFamily: "var(--font-heading)" }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -612,7 +614,7 @@ const Hero = () => {
 
               <motion.p
                 className="text-base sm:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium"
-                style={{ color: "#475569" }}
+                style={{ color: "#E2E8F0" }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -672,10 +674,10 @@ const Hero = () => {
                         }
                       </div>
                       <div className="min-w-0 text-center lg:text-left">
-                        <div className="text-base sm:text-xl lg:text-2xl font-black leading-none mb-0.5 break-words" style={{ color: "#1E293B" }}>
+                        <div className="text-base sm:text-xl lg:text-2xl font-black leading-none mb-0.5 break-words" style={{ color: "#FFFFFF" }}>
                           {stat.value}
                         </div>
-                        <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.15em] font-bold break-words" style={{ color: "#64748B" }}>
+                        <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.15em] font-bold break-words" style={{ color: "#CBD5E1" }}>
                           {stat.label}
                         </div>
                       </div>

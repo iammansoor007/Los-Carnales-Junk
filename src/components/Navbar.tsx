@@ -215,13 +215,13 @@ const Navbar = () => {
                         ref={servicesButtonRef}
                         onMouseEnter={handleServicesMouseEnter}
                         onMouseLeave={handleServicesMouseLeave}
-                        className="flex items-center space-x-2 px-5 py-2.5 text-foreground hover:text-primary transition-all duration-300 font-semibold rounded-xl relative group"
+                        className="flex items-center space-x-2 px-5 py-2.5 text-white hover:text-primary transition-all duration-300 font-semibold rounded-xl relative group"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >
                         <span className="flex items-center space-x-2">
-                          <LinkIcon />
-                          <span className="text-foreground group-hover:text-primary transition-colors">
+                          <LinkIcon className="text-white group-hover:text-primary transition-colors" />
+                          <span className="text-white group-hover:text-primary transition-colors">
                             {link.label}
                           </span>
                         </span>
@@ -231,7 +231,7 @@ const Navbar = () => {
                           }}
                           transition={{ duration: 0.3 }}
                         >
-                          <ChevronDown className="h-4 w-4 ml-1 text-foreground group-hover:text-primary transition-colors" />
+                          <ChevronDown className="h-4 w-4 ml-1 text-white group-hover:text-primary transition-colors" />
                         </motion.span>
                         <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-4/5 transition-all duration-500" />
                       </motion.button>
@@ -359,14 +359,14 @@ const Navbar = () => {
                       handleLinkClick();
                     }}
                     onMouseEnter={() => setActiveMegaMenu(null)}
-                    className="flex items-center space-x-2 px-4 py-2.5 text-foreground hover:text-primary transition-all duration-300 font-semibold rounded-xl relative group"
+                    className="flex items-center space-x-2 px-4 py-2.5 text-white hover:text-primary transition-all duration-300 font-semibold rounded-xl relative group"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <div className="text-foreground group-hover:text-primary transition-colors">
-                      <LinkIcon />
+                    <div className="text-white group-hover:text-primary transition-colors">
+                      <LinkIcon className="text-white group-hover:text-primary transition-colors" />
                     </div>
-                    <span className="text-foreground group-hover:text-primary transition-colors">
+                    <span className="text-white group-hover:text-primary transition-colors">
                       {link.label}
                     </span>
                     <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-3/4 transition-all duration-500" />
