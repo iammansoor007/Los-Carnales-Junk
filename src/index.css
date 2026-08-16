@@ -464,10 +464,11 @@ nav .text-foreground {
   /* already handled by semantic classes */
 }
 
-/* Override hardcoded white text in light-background sections */
-section.relative.bg-background .text-white,
-section.relative.overflow-hidden:not(#hero-section) .text-white {
-  color: var(--body-text-color) !important;
+/* Safeguard text-white inside dark gradient boxes */
+[style*="#1E293B"] .text-white,
+[style*="#0F172A"] .text-white,
+.dark-section .text-white {
+  color: #FFFFFF !important;
 }
 
 /* Fix step indicator colors in hero form that are hardcoded white */

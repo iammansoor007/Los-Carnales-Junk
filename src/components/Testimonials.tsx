@@ -215,7 +215,7 @@ const TestimonialCard = ({
     >
       <div
         className={`
-          relative bg-card rounded-none p-8 md:p-12
+          relative bg-white rounded-none p-8 md:p-12
           border-2 transition-all duration-500
           min-h-[380px] md:min-h-[420px]
           flex flex-col overflow-hidden

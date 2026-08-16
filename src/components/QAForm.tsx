@@ -244,7 +244,7 @@ const HolographicInput = ({
 
       <div
         className={`
-        relative flex items-center bg-card/95 backdrop-blur-sm rounded-xl border transition-all duration-500
+        relative flex items-center bg-white rounded-xl border transition-all duration-500
         ${isFocused
             ? "border-primary/50 shadow-[0_0_30px_hsl(var(--primary)/0.15)]"
             : hasValue
@@ -350,7 +350,7 @@ const QuantumTextarea = ({
 
       <div
         className={`
-        relative flex bg-card/95 backdrop-blur-sm rounded-xl border transition-all duration-500
+        relative flex bg-white rounded-xl border transition-all duration-500
         ${isFocused
             ? "border-primary/50 shadow-[0_0_30px_hsl(var(--primary)/0.15)]"
             : hasValue
@@ -411,7 +411,7 @@ const CrystalServiceCard = ({
         relative p-5 sm:p-6 rounded-2xl cursor-pointer transition-all duration-700
         ${isSelected
           ? "bg-gradient-to-br from-primary/5 via-card to-primary/5 shadow-2xl"
-          : "bg-card/80 backdrop-blur-sm hover:bg-card"
+          : "bg-white hover:bg-orange-50/50"
         }
       `}
       style={{
@@ -936,7 +936,7 @@ Locally Owned & Operated
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="relative max-w-5xl mx-auto"
         >
-          <div className="relative bg-card/90 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-primary/10 shadow-2xl overflow-hidden">
+          <div className="relative bg-white rounded-2xl sm:rounded-3xl border border-primary/10 shadow-2xl overflow-hidden">
             <svg className="absolute inset-0 w-full h-full pointer-events-none">
               <motion.rect
                 x="2"
