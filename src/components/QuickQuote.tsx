@@ -37,7 +37,7 @@ const QuickQuote = () => {
         setIsSubmitting(true);
 
         const emailContent = `
-🏠 NEW QUICK QUOTE REQUEST - Titan Hauling
+🚛 NEW QUICK QUOTE REQUEST - Los Carnales Junk Removal
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -61,7 +61,7 @@ Locally Owned & Operated
 
         try {
             try {
-                const response = await fetch('https://formsubmit.co/ajax/info@titanhauling.vercel.app', {
+                const response = await fetch('https://formsubmit.co/ajax/info@loscarnalesjunk.com', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -87,13 +87,13 @@ Locally Owned & Operated
                 console.log('FormSubmit failed, using mailto fallback');
             }
 
-            const mailtoLink = `mailto:info@titanhauling.vercel.app?subject=🏠 Quick Quote - ${formData.name}&body=${encodeURIComponent(emailContent)}`;
+            const mailtoLink = `mailto:info@loscarnalesjunk.com?subject=🚛 Quick Quote - ${formData.name}&body=${encodeURIComponent(emailContent)}`;
             window.location.href = mailtoLink;
             showSuccess();
 
         } catch (error) {
             console.error('Submission error:', error);
-            alert('Please email us directly at info@titanhauling.vercel.app');
+            alert('Please email us directly at info@loscarnalesjunk.com');
         } finally {
             setIsSubmitting(false);
         }

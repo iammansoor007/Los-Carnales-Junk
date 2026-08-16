@@ -293,10 +293,10 @@ const CoatingInquiryForm = () => {
                             name="lastName"
                             value={formData.lastName}
                             onChange={handleChange}
-                            className="w-full rounded-xl py-3 pl-11 pr-4 text-white transition-all focus:outline-none"
-                            style={{ background: "#0F172A", border: "1px solid #334155" }}
-                            onFocus={(e) => e.currentTarget.style.borderColor = "rgba(var(--primary-rgb), 0.4)"}
-                            onBlur={(e) => e.currentTarget.style.borderColor = "var(--graphite-color)"}
+                            className="w-full rounded-xl py-3 pl-11 pr-4 text-gray-800 transition-all focus:outline-none"
+                            style={{ background: "#F8FAFC", border: "1px solid #E2E8F0" }}
+                            onFocus={(e) => e.currentTarget.style.borderColor = "rgba(var(--primary-rgb), 0.5)"}
+                            onBlur={(e) => e.currentTarget.style.borderColor = "#E2E8F0"}
                             placeholder="Doe"
                             required
                           />
@@ -313,10 +313,10 @@ const CoatingInquiryForm = () => {
                             name="address"
                             value={formData.address}
                             onChange={handleChange}
-                            className="w-full rounded-xl py-3 pl-11 pr-4 text-white transition-all focus:outline-none"
-                            style={{ background: "#0F172A", border: "1px solid #334155" }}
-                            onFocus={(e) => e.currentTarget.style.borderColor = "rgba(var(--primary-rgb), 0.4)"}
-                            onBlur={(e) => e.currentTarget.style.borderColor = "var(--graphite-color)"}
+                            className="w-full rounded-xl py-3 pl-11 pr-4 text-gray-800 transition-all focus:outline-none"
+                            style={{ background: "#F8FAFC", border: "1px solid #E2E8F0" }}
+                            onFocus={(e) => e.currentTarget.style.borderColor = "rgba(var(--primary-rgb), 0.5)"}
+                            onBlur={(e) => e.currentTarget.style.borderColor = "#E2E8F0"}
                             placeholder="123 Main St, Canton, MI"
                             required
                           />
@@ -522,7 +522,7 @@ const CoatingInquiryForm = () => {
                 Estimate Request Sent!
               </h3>
               <p className="text-muted-foreground text-sm max-w-xs mx-auto">
-                Thanks for contacting Titan Hauling & Junk. We'll reach out within 24 hours with your free estimate.
+                Thanks for contacting Los Carnales Junk Removal. We'll reach out within 24 hours with your free estimate.
               </p>
             </motion.div>
           )}
@@ -562,7 +562,7 @@ const Hero = () => {
     <section
       ref={sectionRef}
       className="relative min-h-screen overflow-hidden isolate"
-      style={{ background: "linear-gradient(145deg, #0B0F19 0%, #111827 50%, #0F172A 100%)" }}
+      style={{ background: "linear-gradient(145deg, #FFF8F0 0%, #FFEDD5 40%, #FED7AA 70%, #FDBA74 100%)" }}
     >
       {/* Decorative background: light orange subtle pattern */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
@@ -577,16 +577,14 @@ const Hero = () => {
           animate={{ scale: 1 }}
           transition={{ duration: 10, ease: "easeOut" }}
           className="w-full h-full object-cover absolute inset-0 will-change-transform"
-          style={{ opacity: 0.35 }}
+          style={{ opacity: 0.2 }}
         />
-        {/* Dark overlay for readability */}
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(11,15,25,0.6) 0%, rgba(11,15,25,0.7) 100%)" }} />
-        {/* Orange glow top-right */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full" style={{ background: "radial-gradient(circle, rgba(249,115,22,0.18) 0%, transparent 70%)" }} />
+        {/* Subtle radial orange glow top-right */}
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full" style={{ background: "radial-gradient(circle, rgba(249,115,22,0.12) 0%, transparent 70%)" }} />
         {/* Bottom fade to white */}
         <div className="absolute bottom-0 left-0 w-full h-40" style={{ background: "linear-gradient(to top, #FFFFFF, transparent)" }} />
-        {/* Subtle dot grid */}
-        <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle, rgba(249,115,22,0.06) 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
+        {/* Dot grid pattern */}
+        <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle, rgba(249,115,22,0.12) 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
       </div>
 
       <div className="relative z-10 min-h-screen flex items-center pt-24 pb-16 lg:py-24">
@@ -597,7 +595,7 @@ const Hero = () => {
 
               <motion.h1
                 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.75rem] font-black leading-[1.08] tracking-tight uppercase mt-10"
-                style={{ color: "#FFFFFF", fontFamily: "var(--font-heading)" }}
+                style={{ color: "#1E293B", fontFamily: "var(--font-heading)" }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -614,7 +612,7 @@ const Hero = () => {
 
               <motion.p
                 className="text-base sm:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium"
-                style={{ color: "#CBD5E1" }}
+                style={{ color: "#475569" }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -674,10 +672,10 @@ const Hero = () => {
                         }
                       </div>
                       <div className="min-w-0 text-center lg:text-left">
-                        <div className="text-base sm:text-xl lg:text-2xl font-black leading-none mb-0.5 break-words" style={{ color: "#FFFFFF" }}>
+                        <div className="text-base sm:text-xl lg:text-2xl font-black leading-none mb-0.5 break-words" style={{ color: "#1E293B" }}>
                           {stat.value}
                         </div>
-                        <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.15em] font-bold break-words" style={{ color: "#94A3B8" }}>
+                        <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.15em] font-bold break-words" style={{ color: "#64748B" }}>
                           {stat.label}
                         </div>
                       </div>

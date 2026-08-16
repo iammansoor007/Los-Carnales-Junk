@@ -460,7 +460,7 @@ const Navbar = () => {
                       <div className="h-12 w-36 rounded-xl flex items-center justify-center overflow-hidden">
                         <img
                           src={logo2nd}
-                          alt="Titan Hauling Logo"
+                          alt="Los Carnales Junk Removal Logo"
                           className="h-full w-full object-contain"
                         />
                       </div>

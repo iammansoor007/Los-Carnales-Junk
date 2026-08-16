@@ -704,7 +704,7 @@ const CTASection = memo(({ cta }: CTASectionProps) => {
               >
                 <img
                   src={vectoroverlay}
-                  alt="Titan Coatings Professional"
+                  alt="Los Carnales Junk Removal Professional"
                   loading="eager"
                   className="w-full h-auto object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.4)] will-change-transform transform-gpu"
                 />
@@ -722,7 +722,7 @@ const CTASection = memo(({ cta }: CTASectionProps) => {
               className="inline-block mb-4"
             >
               <span className="px-3 py-1.5 text-xs font-semibold bg-background/20 border border-white/30 rounded-full text-white/90 backdrop-blur-sm">
-                TITAN COATINGS
+                LOS CARNALES JUNK
               </span>
             </motion.div>
 
@@ -832,7 +832,7 @@ const WhyChooseUs = () => {
     <section
       ref={sectionRef}
       className="relative bg-background py-20 md:py-24 lg:py-32 overflow-hidden"
-      aria-label="Why Choose Titan Coatings"
+      aria-label="Why Choose Los Carnales Junk Removal"
     >
       <CinematicBackground />
 
