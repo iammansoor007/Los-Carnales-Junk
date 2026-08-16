@@ -156,7 +156,24 @@
     font-family: var(--font-heading);
     letter-spacing: -0.01em;
     line-height: 1.05;
-    color: #1E293B !important;
+    /* Only force dark text on non-dark containers */
+    color: #1E293B;
+  }
+
+  /* Dark containers: let headings inherit white from parent */
+  [style*="#1E293B"] h1,
+  [style*="#1E293B"] h2,
+  [style*="#1E293B"] h3,
+  [style*="#0F172A"] h1,
+  [style*="#0F172A"] h2,
+  [style*="#0F172A"] h3,
+  footer h1,
+  footer h2,
+  footer h3,
+  footer h4,
+  footer h5,
+  footer h6 {
+    color: inherit;
   }
 
   h1,

@@ -458,9 +458,7 @@ const Testimonials = () => {
                   </div>
                 ))}
               </div>
-              <div className="text-xs md:text-sm text-muted-foreground">
-                <span className="font-semibold text-foreground">{stats.subscribers}</span> 5-star reviews
-              </div>
+
             </div>
           </div>
         </div>

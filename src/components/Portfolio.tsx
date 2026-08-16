@@ -100,7 +100,7 @@ const ProjectCard = forwardRef<HTMLDivElement, { project: any; index: number }>(
         </div>
 
         {/* Project Title */}
-        <h3 className="text-xl md:text-2xl font-black text-white uppercase tracking-tight leading-tight mb-3 group-hover:text-primary transition-colors duration-300 font-heading">
+        <h3 className="text-xl md:text-2xl font-black uppercase tracking-tight leading-tight mb-3 group-hover:text-primary transition-colors duration-300 font-heading" style={{ color: "#1E293B" }}>
           {project.title}
         </h3>
 
