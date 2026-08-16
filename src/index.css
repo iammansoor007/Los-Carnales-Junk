@@ -1,0 +1,489 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ===============================
+       TITAN HAULING LIGHT THEME
+       Vivid Orange — #F97316 → Primary accent, buttons, highlights
+       Deep Orange — #EA580C → Secondary / hover brand color
+       Pure White — #FFFFFF → Main backgrounds
+       Off-White — #F8F9FA → Section backgrounds
+       Light Gray — #F1F5F9 → Card surfaces
+       Charcoal — #1E293B → Headings, body text
+       Medium Gray — #64748B → Muted / subtext
+     ================================= */
+
+    --background: 0 0% 100%;
+    /* #FFFFFF (Pure White) */
+    --foreground: 215 28% 17%;
+    /* #1E293B (Charcoal) */
+    --popover: 0 0% 100%;
+    /* #FFFFFF */
+    --popover-foreground: 215 28% 17%;
+    /* #1E293B */
+    --card: 210 40% 96%;
+    /* #F1F5F9 (Light Gray Card) */
+    --card-foreground: 215 28% 17%;
+    /* #1E293B */
+    --primary: 25 95% 53%;
+    /* #F97316 (Vivid Orange) */
+    --primary-foreground: 0 0% 100%;
+    /* White on orange */
+    --secondary: 20 91% 48%;
+    /* #EA580C (Deep Orange) */
+    --secondary-foreground: 0 0% 100%;
+    --accent: 24 95% 53%;
+    /* #F97316 (Vivid Orange) */
+    --accent-foreground: 0 0% 100%;
+    --muted: 210 40% 96%;
+    /* #F1F5F9 */
+    --muted-foreground: 215 20% 32%;
+    /* #3E5170 (Dark readable grey) */
+    --border: 214 32% 91%;
+    /* #E2E8F0 (Light Border) */
+    --input: 214 32% 91%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 24 95% 53%;
+    /* #F97316 */
+    --radius: 10px;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 215 28% 17%;
+    --sidebar-primary: 24 95% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 20 91% 48%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 24 95% 53%;
+
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Montserrat', sans-serif;
+
+    /* Global theme variables for referencing in styles */
+    --primary-hex: #F97316;
+    /* Vivid Orange */
+    --primary-hover-hex: #EA580C;
+    /* Deep Orange */
+    --dark-bg: #FFFFFF;
+    /* White Main Background */
+    --section-bg: #F8FAFC;
+    /* Off-White Section Background */
+    --charcoal-bg: #F1F5F9;
+    /* Light Gray Container Background */
+    --card-bg: #F8FAFC;
+    /* Light Card Surface */
+    --white-color: #FFFFFF;
+    /* Pure White */
+    --heading-color: #1E293B;
+    /* Dark Charcoal Headings */
+    --body-text-color: #1E293B;
+    /* Charcoal body text — high contrast */
+    --silver-color: #475569;
+    /* Visible slate for secondary text */
+    --light-silver-color: #CBD5E1;
+    /* Light subtext */
+    --graphite-color: #E2E8F0;
+    /* Light Border */
+    --steel-gray-color: #94A3B8;
+    /* Medium Gray */
+    --success-color: #16A34A;
+    --danger-color: #DC2626;
+
+    /* RGB values for opacity calculation */
+    --primary-rgb: 249, 115, 22;
+    --primary-hover-rgb: 234, 88, 12;
+    --dark-bg-rgb: 255, 255, 255;
+    --card-bg-rgb: 248, 250, 252;
+    --silver-rgb: 148, 163, 184;
+    --light-silver-rgb: 203, 213, 225;
+    --graphite-rgb: 226, 232, 240;
+    --black-rgb: 30, 41, 59;
+    --white-rgb: 255, 255, 255;
+    --charcoal-bg-rgb: 241, 245, 249;
+  }
+}
+
+@layer base {
+
+  /* ─── Performance: GPU compositing layer for the entire page ─── */
+  html {
+    scroll-behavior: smooth;
+    /* Smooth native scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
+    /* Prevent layout shift caused by scrollbar appearance */
+    scrollbar-gutter: stable;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  * {
+    @apply border-border;
+    /* Use logical pixels — improves text rendering on HiDPI */
+    text-rendering: optimizeSpeed;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--dark-bg);
+    color: var(--body-text-color);
+    /* Prevent layout shift when scrollbar appears */
+    overflow-x: hidden;
+    /* Smooth momentum scrolling */
+    overscroll-behavior-y: none;
+  }
+
+  #root {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* Isolate root so fixed children work correctly */
+    isolation: isolate;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+    color: #1E293B !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-black,
+  .font-extrabold {
+    font-weight: 700 !important;
+  }
+
+  /* ─── Lazy sections: skip rendering offscreen content ─── */
+  section {
+    position: relative;
+    content-visibility: auto;
+    contain-intrinsic-size: 0 800px;
+  }
+
+  /* ─── Hero & navbar always visible (never deferred) ─── */
+  #hero-section,
+  nav {
+    content-visibility: visible;
+  }
+
+  /* ─── Images: prevent layout shift, smooth load ─── */
+  img {
+    display: block;
+    max-width: 100%;
+    /* Smoothly fade in lazy-loaded images */
+    transition: opacity 0.3s ease;
+  }
+
+  /* ─── Lazy images: fade in on load (handled per-component via onLoad) ─── */
+  img[loading="lazy"].loaded {
+    opacity: 1;
+  }
+
+  /* ─── Focus visible — accessibility without layout flicker ─── */
+  :focus-visible {
+    outline: 2px solid var(--primary-hex);
+    outline-offset: 2px;
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-24 py-20 md:py-32;
+  }
+
+  .heading-xl {
+    @apply text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-medium;
+    font-family: var(--font-heading);
+    letter-spacing: -0.03em;
+    line-height: 0.95;
+  }
+
+  .heading-lg {
+    @apply text-4xl md:text-5xl lg:text-6xl font-medium;
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .heading-md {
+    @apply text-2xl md:text-3xl lg:text-4xl font-medium;
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+
+  .body-lg {
+    @apply text-lg md:text-xl;
+    font-family: var(--font-body);
+    line-height: 1.6;
+  }
+
+  .body-sm {
+    @apply text-sm md:text-base;
+    font-family: var(--font-body);
+    line-height: 1.5;
+  }
+
+  /* ORANGE BRAND LINE */
+  .accent-line {
+    @apply w-14 h-1 rounded-full;
+    background: hsl(var(--primary));
+  }
+
+  .grid-editorial {
+    @apply grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8;
+  }
+
+  /* ORANGE TEXT GRADIENT */
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* CTA BUTTON */
+  .bg-gradient-cta {
+    background: linear-gradient(135deg, var(--primary-hex), var(--primary-hover-hex));
+    color: var(--white-color);
+  }
+
+  /* PRIMARY BUTTON */
+  .drpaint-btn-primary {
+    background: var(--primary-hex);
+    color: var(--white-color);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    border-radius: var(--radius);
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(var(--primary-rgb), 0.15);
+    will-change: transform;
+  }
+
+  .drpaint-btn-primary:hover {
+    background: var(--primary-hover-hex);
+    transform: translateY(-3px);
+    box-shadow: 0 16px 35px rgba(var(--primary-rgb), 0.25);
+  }
+
+  /* SECONDARY BUTTON */
+  .drpaint-btn-secondary {
+    background: transparent;
+    color: var(--primary-hex);
+    border: 2px solid var(--primary-hex);
+    transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+    border-radius: var(--radius);
+    font-weight: 600;
+    will-change: transform;
+  }
+
+  .drpaint-btn-secondary:hover {
+    background: var(--primary-hex);
+    border-color: var(--primary-hex);
+    color: var(--white-color);
+    transform: translateY(-2px);
+  }
+
+  /* CARD SYSTEM */
+  .drpaint-card {
+    background: var(--card-bg);
+    border: 1px solid var(--graphite-color);
+    box-shadow: 0 4px 20px rgba(var(--black-rgb), 0.08);
+    border-radius: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .drpaint-card:hover {
+    border-color: var(--primary-hex);
+    box-shadow: 0 8px 32px rgba(var(--primary-rgb), 0.12);
+  }
+
+  .drpaint-shadow {
+    box-shadow: 0 4px 16px rgba(var(--black-rgb), 0.08);
+  }
+
+  /* NAVBAR GLASS */
+  .navbar-glass {
+    background: rgba(255, 255, 255, 0.95);
+    /* White with slight transparency */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--graphite-color);
+    box-shadow: 0 1px 12px rgba(var(--black-rgb), 0.06);
+  }
+
+  /* HERO OVERLAY — keep dark for text contrast over hero images */
+  .hero-overlay {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.82), rgba(30, 41, 59, 0.75));
+  }
+
+  /* PREMIUM SECTION BACKGROUND GRADIENT */
+  .bg-premium-gradient {
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--section-bg) 50%, var(--charcoal-bg) 100%);
+  }
+
+  /* ELEGANT GRADIENT DIVIDER */
+  .premium-divider {
+    height: 1px;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(var(--primary-rgb), 0.15) 20%,
+        rgba(var(--primary-rgb), 0.3) 50%,
+        rgba(var(--primary-rgb), 0.15) 80%,
+        transparent 100%);
+    width: 100%;
+    /* No layout recalculation — height is fixed */
+    contain: strict;
+  }
+
+  /* ORANGE ACCENTS */
+  .gold-accent {
+    color: hsl(var(--accent));
+  }
+
+  .brown-accent {
+    color: hsl(var(--secondary));
+  }
+
+  /* GPU-COMPOSITED LAYER HINT */
+  .will-change-gpu {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  /* ─── Super-smooth motion: only animate compositable properties ─── */
+  .smooth-hover {
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      opacity 0.2s ease;
+    will-change: transform;
+  }
+
+  .smooth-hover:hover {
+    transform: translateY(-4px);
+  }
+
+  /* ULTRA-SMOOTH FLOATING ANIMATION */
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  /* SUBTLE ORANGE PULSE */
+  @keyframes orange-pulse {
+
+    0%,
+    100% {
+      opacity: 0.6;
+    }
+
+    50% {
+      opacity: 1;
+    }
+  }
+
+  .animate-gold-pulse {
+    animation: orange-pulse 3s ease-in-out infinite;
+    will-change: opacity;
+  }
+
+  /* SHIMMER FOR LOADING STATES */
+  @keyframes shimmer {
+    0% {
+      background-position: -200% center;
+    }
+
+    100% {
+      background-position: 200% center;
+    }
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(90deg, #F1F5F9 25%, #E2E8F0 50%, #F1F5F9 75%);
+    background-size: 200% auto;
+    animation: shimmer 1.5s linear infinite;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   LIGHT THEME GLOBAL OVERRIDES
+   Fix hardcoded dark-theme text colors on white background sections.
+   Only applies to sections that are NOT explicitly dark.
+   Dark contexts: .dark-section, [class*="bg-dark"], hero#hero-section
+   ═══════════════════════════════════════════════════════════ */
+
+/* Mark intentional dark containers so their text-white stays correct */
+.dark-section,
+[style*="background: linear-gradient(135deg, var(--dark-bg)"],
+[style*="#0F172A"],
+[style*="#1E293B"],
+[style*="background: \"#1E293B\""] {
+  /* Dark containers: allow white text */
+  color: inherit;
+}
+
+/* For all sections WITHOUT dark background: fix text-white to dark */
+section:not(#hero-section):not(.dark-section) .text-white,
+nav .text-foreground {
+  /* already handled by semantic classes */
+}
+
+/* Override hardcoded white text in light-background sections */
+section.relative.bg-background .text-white,
+section.relative.overflow-hidden:not(#hero-section) .text-white {
+  color: var(--body-text-color) !important;
+}
+
+/* Fix step indicator colors in hero form that are hardcoded white */
+.light-step-label {
+  color: var(--silver-color);
+}
+
+/* Footer keeps dark bg — override the BG variable alias */
+footer,
+.footer-dark {
+  background: #0F172A;
+  color: #F8FAFC;
+}
+
+footer .text-white,
+footer [class*="text-"],
+.footer-dark .text-white {
+  color: inherit;
+}
