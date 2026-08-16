@@ -562,7 +562,7 @@ const Hero = () => {
     <section
       ref={sectionRef}
       className="relative min-h-screen overflow-hidden isolate"
-      style={{ background: "linear-gradient(145deg, #FFF8F0 0%, #FFEDD5 40%, #FED7AA 70%, #FDBA74 100%)" }}
+      style={{ background: "linear-gradient(145deg, rgba(255,248,240,0.45) 0%, rgba(255,237,213,0.35) 50%, rgba(254,215,170,0.25) 100%)" }}
     >
       {/* Decorative background: light orange subtle pattern */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
@@ -577,7 +577,7 @@ const Hero = () => {
           animate={{ scale: 1 }}
           transition={{ duration: 10, ease: "easeOut" }}
           className="w-full h-full object-cover absolute inset-0 will-change-transform"
-          style={{ opacity: 0.2 }}
+          style={{ opacity: 0.55 }}
         />
         {/* Subtle radial orange glow top-right */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full" style={{ background: "radial-gradient(circle, rgba(249,115,22,0.12) 0%, transparent 70%)" }} />
