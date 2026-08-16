@@ -39,12 +39,12 @@ const RenovGuarantee = () => {
 
             {/* Body copy */}
             <div className="space-y-3 sm:space-y-4 max-w-lg">
-              <p className="text-foreground/60 text-sm sm:text-base md:text-lg leading-relaxed">
-                The Renov Team has a{" "}
+              <p className="text-foreground/85 text-sm sm:text-base md:text-lg leading-relaxed font-medium">
+                The Renov Team has a{"  "}
                 <strong className="text-foreground">95% customer satisfaction rating</strong>
                 {" "}and a FREE service guarantee to ensure every promise is fulfilled.
               </p>
-              <p className="text-foreground/60 text-sm sm:text-base leading-relaxed">
+              <p className="text-foreground/85 text-sm sm:text-base leading-relaxed font-medium">
                 If our best efforts haven't satisfied you —{" "}
                 <strong className="text-primary">the cost of your service is on us.</strong>
               </p>
@@ -102,7 +102,7 @@ const RenovGuarantee = () => {
                 transition={{ delay: 0.2 + i * 0.08 }}
                 className="flex items-center justify-between py-5 sm:py-7 border-b border-border last:border-b-0 gap-4"
               >
-                <span className="text-foreground/50 text-[9px] sm:text-xs font-black uppercase tracking-[0.2em] sm:tracking-[0.3em] leading-snug flex-1">
+                <span className="text-foreground/80 text-[9px] sm:text-xs font-black uppercase tracking-[0.2em] sm:tracking-[0.3em] leading-snug flex-1">
                   {stat.label}
                 </span>
                 <span className="text-2xl sm:text-3xl font-black text-primary tabular-nums flex-shrink-0">

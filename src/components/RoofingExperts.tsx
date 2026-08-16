@@ -110,7 +110,7 @@ const StatCard = memo(
           </span>
           <div className="absolute -bottom-1 sm:-bottom-2 left-0 w-8 sm:w-12 h-0.5 rounded-full" style={{ background: "linear-gradient(90deg, var(--primary-hex), var(--primary-hover-hex))" }} />
         </div>
-        <p className="text-[10px] sm:text-xs font-bold mt-3 leading-tight uppercase tracking-wide" style={{ color: "#CBD5E1" }}>
+        <p className="text-[10px] sm:text-xs font-bold mt-3 leading-tight uppercase tracking-wide" style={{ color: "var(--silver-color)" }}>
           {label}
         </p>
       </motion.div>
@@ -253,11 +253,11 @@ export default function AboutSection() {
                 variants={variants}
                 custom={3}
                 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-black leading-[1.08] tracking-tight"
-                style={{ color: "var(--white-color)", fontFamily: "var(--font-heading)" }}
+                style={{ color: "var(--heading-color)", fontFamily: "var(--font-heading)" }}
               >
                 {headline.prefix}{" "}
                 <span style={{ color: "var(--primary-hex)" }}>{headline.highlight}</span>{" "}
-                <span style={{ color: "var(--light-silver-color)" }}>{headline.suffix}</span>
+                <span style={{ color: "var(--body-text-color)" }}>{headline.suffix}</span>
               </motion.h2>
 
               <motion.div
@@ -271,8 +271,8 @@ export default function AboutSection() {
             <motion.p
               variants={variants}
               custom={5}
-              className="text-base md:text-lg leading-relaxed"
-              style={{ color: "rgba(var(--light-silver-rgb), 0.6)" }}
+              className="text-base md:text-lg leading-relaxed font-medium"
+              style={{ color: "var(--body-text-color)" }}
               dangerouslySetInnerHTML={{ __html: description }}
             />
 

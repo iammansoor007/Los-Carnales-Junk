@@ -613,9 +613,9 @@ const CTASection = memo(({ cta }: CTASectionProps) => {
         <div
           className="absolute inset-0 rounded-3xl"
           style={{
-            background: "linear-gradient(135deg, var(--dark-bg) 0%, var(--card-bg) 50%, var(--graphite-color) 100%)",
-            boxShadow: "0 25px 60px rgba(0,0,0,0.5)",
-            border: "1px solid rgba(230, 126, 34, 0.2)"
+            background: "linear-gradient(135deg, #1E293B 0%, #0F172A 100%)",
+            boxShadow: "0 25px 60px rgba(0,0,0,0.15)",
+            border: "1px solid rgba(249, 115, 22, 0.2)"
           }}
         />
 
