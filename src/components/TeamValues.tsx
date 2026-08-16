@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ownerImg from "@/assets/titanfounderreal.png";
+import ownerImg from "@/assets/lcfounder.png";
 import completeData from "../src/data/completeData.json";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -313,15 +313,7 @@ const Leadership = () => {
               ))}
 
               <div className="flex items-center gap-4 mt-8">
-                <motion.a
-                  href={ceo.social.linkedin}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="p-3 rounded-full bg-primary/5 text-primary hover:bg-primary/10 transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Icons.Linkedin />
-                </motion.a>
+
                 <motion.a
                   href={`mailto:${ceo.social.email}`}
                   whileHover={{ scale: 1.1 }}
