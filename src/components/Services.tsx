@@ -273,11 +273,11 @@ const Services = () => {
                   </span>
                 </div>
 
-                <h3 className="text-3xl md:text-4xl xl:text-5xl font-black leading-[1.05] tracking-tight mb-5" style={{ color: "var(--white-color)", fontFamily: "var(--font-heading)" }}>
+                <h3 className="text-3xl md:text-4xl xl:text-5xl font-black leading-[1.05] tracking-tight mb-5" style={{ color: "#FFFFFF", fontFamily: "var(--font-heading)" }}>
                   {cta.title}
                 </h3>
 
-                <p className="text-base md:text-lg leading-relaxed mb-7" style={{ color: "rgba(var(--light-silver-rgb), 0.8)" }}>
+                <p className="text-base md:text-lg leading-relaxed mb-7" style={{ color: "#E2E8F0" }}>
                   {cta.description}
                 </p>
 
@@ -288,7 +288,7 @@ const Services = () => {
                       <div className="w-4 h-4 rounded-full flex items-center justify-center shrink-0" style={{ background: "rgba(var(--primary-rgb), 0.12)", border: "1px solid rgba(var(--primary-rgb), 0.37)" }}>
                         <CheckCircle className="w-2.5 h-2.5" style={{ color: "var(--primary-hex)" }} />
                       </div>
-                      <span className="text-xs font-semibold" style={{ color: "var(--silver-color)" }}>{t}</span>
+                      <span className="text-xs font-semibold" style={{ color: "#CBD5E1" }}>{t}</span>
                     </div>
                   ))}
                 </div>
@@ -303,7 +303,7 @@ const Services = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
                   className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-bold transition-all duration-300"
-                  style={{ background: "linear-gradient(135deg, var(--primary-hex), var(--primary-hover-hex))", color: "var(--dark-bg)", boxShadow: "0 12px 40px rgba(var(--primary-rgb), 0.35)" }}
+                  style={{ background: "linear-gradient(135deg, var(--primary-hex), var(--primary-hover-hex))", color: "#FFFFFF", boxShadow: "0 12px 40px rgba(var(--primary-rgb), 0.35)" }}
                 >
                   {cta.buttonText}
                   <ArrowRight className="w-5 h-5" />
@@ -315,7 +315,7 @@ const Services = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
                   className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-bold transition-all duration-300"
-                  style={{ background: "transparent", color: "var(--silver-color)", border: "2px solid rgba(var(--primary-rgb), 0.35)" }}
+                  style={{ background: "transparent", color: "#FFFFFF", border: "2px solid rgba(255, 255, 255, 0.4)" }}
                 >
                   <Phone className="w-5 h-5" />
                   Call Now

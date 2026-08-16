@@ -288,7 +288,7 @@ const FeatureCard = ({ feature, index }: { feature: any; index: number }) => {
       }}
       className="relative group h-full cursor-pointer"
     >
-      <div className="relative h-full bg-card overflow-hidden rounded-2xl border border-border">
+      <div className="relative h-full bg-white overflow-hidden rounded-3xl border border-orange-100 shadow-md shadow-orange-950/[0.03] hover:shadow-xl hover:shadow-orange-500/[0.08] transition-all duration-500">
         <motion.div
           className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
           style={{
@@ -384,25 +384,17 @@ const FeatureCard = ({ feature, index }: { feature: any; index: number }) => {
 
         <div className="relative h-full p-8 flex flex-col z-10">
           <div className="relative mb-6">
-            <div className="relative w-20 h-20">
+            <div className="relative w-20 h-20 bg-orange-50/70 border border-orange-100 rounded-2xl flex items-center justify-center">
               <motion.div
-                className="absolute inset-0 border border-primary/20"
+                className="absolute inset-0 bg-primary/10 opacity-0"
                 animate={{
-                  borderColor: isHovered
-                    ? "hsl(var(--primary))"
-                    : "hsl(var(--primary)/0.2)",
+                  opacity: isHovered ? 1 : 0,
                   scale: isHovered ? 1.05 : 1,
                 }}
                 transition={{ duration: 0.3 }}
               />
 
-              <motion.div
-                className="absolute inset-2 border border-primary/10"
-                animate={{ rotate: isHovered ? 45 : 0 }}
-                transition={{ duration: 0.5 }}
-              />
-
-              <div className="absolute inset-0 flex items-center justify-center">
+              <div className="relative flex items-center justify-center">
                 <motion.div
                   animate={{
                     scale: isHovered ? 1.1 : 1,
@@ -683,7 +675,7 @@ const CTASection = memo(({ cta }: CTASectionProps) => {
                                             px-8 py-3.5 rounded-full font-bold transition-all duration-300 shadow-lg
                                             flex items-center gap-2
                                             ${button.primary
-                        ? 'bg-primary text-dark hover:bg-secondary shadow-[0_10px_40px_rgba(0,0,0,0.3)]'
+                        ? 'bg-primary text-white hover:bg-secondary shadow-[0_10px_40px_rgba(0,0,0,0.3)]'
                         : 'bg-transparent text-white border-2 border-white/20 hover:bg-white/5 backdrop-blur-sm'
                       }
                                         `}

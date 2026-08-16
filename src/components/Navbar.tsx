@@ -27,19 +27,19 @@ import logo2nd from "../assets/logoreal.png";
 import completeData from "../src/data/completeData.json";
 
 const iconMap = {
-  Home: () => <Home className="h-5 w-5 text-foreground" />,
-  Briefcase: () => <Briefcase className="h-5 w-5 text-foreground" />,
-  Users: () => <Users className="h-5 w-5 text-foreground" />,
-  MessageSquare: () => <MessageSquare className="h-5 w-5 text-foreground" />,
-  Phone: () => <Phone className="h-5 w-5 text-foreground" />,
-  ClipboardCheck: () => <ClipboardCheck className="h-5 w-5 text-foreground" />,
-  Star: () => <Star className="h-5 w-5 text-foreground" />,
-  Clock: () => <Clock className="h-5 w-5 text-foreground" />,
-  Shield: () => <Shield className="h-5 w-5 text-foreground" />,
-  Image: () => <Briefcase className="h-5 w-5 text-foreground" />,
-  FileText: () => <FileText className="h-5 w-5 text-foreground" />,
-  Calendar: () => <Calendar className="h-5 w-5 text-foreground" />,
-  Wrench: () => <Wrench className="h-5 w-5 text-foreground" />,
+  Home: ({ className = "text-foreground" }: { className?: string } = {}) => <Home className={`h-5 w-5 ${className}`} />,
+  Briefcase: ({ className = "text-foreground" }: { className?: string } = {}) => <Briefcase className={`h-5 w-5 ${className}`} />,
+  Users: ({ className = "text-foreground" }: { className?: string } = {}) => <Users className={`h-5 w-5 ${className}`} />,
+  MessageSquare: ({ className = "text-foreground" }: { className?: string } = {}) => <MessageSquare className={`h-5 w-5 ${className}`} />,
+  Phone: ({ className = "text-foreground" }: { className?: string } = {}) => <Phone className={`h-5 w-5 ${className}`} />,
+  ClipboardCheck: ({ className = "text-foreground" }: { className?: string } = {}) => <ClipboardCheck className={`h-5 w-5 ${className}`} />,
+  Star: ({ className = "text-foreground" }: { className?: string } = {}) => <Star className={`h-5 w-5 ${className}`} />,
+  Clock: ({ className = "text-foreground" }: { className?: string } = {}) => <Clock className={`h-5 w-5 ${className}`} />,
+  Shield: ({ className = "text-foreground" }: { className?: string } = {}) => <Shield className={`h-5 w-5 ${className}`} />,
+  Image: ({ className = "text-foreground" }: { className?: string } = {}) => <Briefcase className={`h-5 w-5 ${className}`} />,
+  FileText: ({ className = "text-foreground" }: { className?: string } = {}) => <FileText className={`h-5 w-5 ${className}`} />,
+  Calendar: ({ className = "text-foreground" }: { className?: string } = {}) => <Calendar className={`h-5 w-5 ${className}`} />,
+  Wrench: ({ className = "text-foreground" }: { className?: string } = {}) => <Wrench className={`h-5 w-5 ${className}`} />,
 };
 const serviceIconMap = {
   Home: ({ isHovered = false }: { isHovered?: boolean }) => (
@@ -386,10 +386,10 @@ const Navbar = () => {
                 onMouseEnter={() => setActiveMegaMenu(null)}
                 className="group relative px-7 py-3.5 rounded-xl font-semibold transition-all duration-300 bg-primary text-primary-foreground hover:bg-primary hover:text-white "
               >
-                <span className="relative z-10 flex items-center space-x-2">
+                <span className="relative z-10 flex items-center space-x-2 text-white">
                   {(() => {
                     const CtaIcon = iconMap[ctaButton.icon as keyof typeof iconMap] || iconMap.Home;
-                    return <CtaIcon />;
+                    return <CtaIcon className="text-white" />;
                   })()}
                   <span>{ctaButton.label}</span>
                 </span>

@@ -14,10 +14,10 @@ gsap.registerPlugin(ScrollTrigger);
 /* ─── Brand palette constants ─────────────────────────── */
 const GOLD = "var(--primary-hex)";
 const DARK_GOLD = "var(--primary-hover-hex)";
-const SILVER = "var(--silver-color)";
-const BG = "var(--dark-bg)";
-const CARD = "var(--card-bg)";
-const GRAPHITE = "var(--graphite-color)";
+const SILVER = "#9CA3AF";
+const BG = "#0B0F19";
+const CARD = "#111827";
+const GRAPHITE = "#1F2937";
 
 /* ─── Unsplash Images ──────────────────────────────────── */
 const Images = {
@@ -829,7 +829,7 @@ const Footer = () => {
         <LegacyMarquee />
 
         {/* Bottom bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 py-8 border-t border-border/10 text-[11px] text-muted-foreground/50 font-medium font-body text-center md:text-left">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 py-8 border-t border-border/10 text-[11px] font-medium font-body text-center md:text-left" style={{ color: "#9CA3AF" }}>
           <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 flex-wrap justify-center">
             <span>{bottom.copyright}</span>
             <span className="hidden sm:inline-block w-1 h-1 rounded-full bg-primary/20" />
@@ -841,9 +841,9 @@ const Footer = () => {
               <a
                 key={link.label}
                 href={link.href}
-                style={{ color: "rgba(var(--silver-rgb), 0.33)", textDecoration: "none", transition: "color 0.2s" }}
+                style={{ color: "#9CA3AF", textDecoration: "none", transition: "color 0.2s" }}
                 onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = GOLD)}
-                onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(var(--silver-rgb), 0.33)")}
+                onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#9CA3AF")}
               >
                 {link.label}
               </a>
@@ -854,9 +854,9 @@ const Footer = () => {
             href="https://www.dynamicdesignsagency.com"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "rgba(var(--silver-rgb), 0.2)", textDecoration: "none", transition: "color 0.2s", fontFamily: "var(--font-body)" }}
+            style={{ color: "#6B7280", textDecoration: "none", transition: "color 0.2s", fontFamily: "var(--font-body)" }}
             onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = GOLD)}
-            onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(var(--silver-rgb), 0.2)")}
+            onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#6B7280")}
           >
             {bottom.tagline}
           </a>
