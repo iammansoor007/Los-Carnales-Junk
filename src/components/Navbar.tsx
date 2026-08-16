@@ -197,7 +197,7 @@ const Navbar = () => {
               <div className="absolute left-0 top-1/2 -translate-y-[30%] h-20 w-32 sm:h-24 sm:w-40 lg:h-32 lg:w-46 flex items-center justify-center z-50">
                 <img
                   src={logo}
-                  alt="Titan Hauling Logo"
+                  alt="Los Carnales Junk Removal Logo"
                   className="h-full w-full object-contain p-1 filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.6)]"
                 />
               </div>
@@ -245,7 +245,7 @@ const Navbar = () => {
                             exit={{ opacity: 0, y: 10, scale: 0.98 }}
                             onMouseEnter={handleMegaMenuMouseEnter}
                             onMouseLeave={handleMegaMenuMouseLeave}
-                            className="absolute left-1/2 transform -translate-x-1/2 xl:left-0 xl:transform-none top-full mt-2 w-[90vw] max-w-[900px] bg-card rounded-2xl shadow-2xl border border-border p-6 overflow-hidden"
+                            className="absolute left-1/2 transform -translate-x-1/2 xl:left-0 xl:transform-none top-full mt-3 w-[90vw] max-w-[900px] bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.08)] border border-slate-100 p-6 overflow-hidden"
                             style={{ zIndex: 1000 }}
                           >
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -270,8 +270,8 @@ const Navbar = () => {
                                     onMouseLeave={() => {
                                       setHoveredService(null);
                                     }}
-                                    className="group block p-5 rounded-xl border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 bg-card"
-                                    whileHover={{ y: -3 }}
+                                    className="group block p-6 rounded-2xl border border-slate-100 hover:border-orange-200 hover:shadow-xl hover:shadow-orange-500/[0.04] transition-all duration-300 bg-white"
+                                    whileHover={{ y: -4 }}
                                   >
                                     <div className="flex items-start space-x-3 mb-4">
                                       <div
@@ -288,12 +288,12 @@ const Navbar = () => {
                                         <h3
                                           className={`font-bold text-base mb-1 transition-colors ${hoveredService === service.title
                                             ? "text-primary"
-                                            : "text-card-foreground group-hover:text-primary"
+                                            : "text-slate-800 group-hover:text-primary"
                                             }`}
                                         >
                                           {service.title}
                                         </h3>
-                                        <p className="text-muted-foreground text-xs">
+                                        <p className="text-slate-500 text-xs leading-relaxed">
                                           {service.description}
                                         </p>
                                       </div>
@@ -314,7 +314,7 @@ const Navbar = () => {
                                           <span
                                             className={`truncate transition-colors ${hoveredService === service.title
                                               ? "text-primary"
-                                              : "text-card-foreground group-hover:text-primary"
+                                              : "text-slate-650 group-hover:text-primary"
                                               }`}
                                           >
                                             {item}
@@ -327,9 +327,9 @@ const Navbar = () => {
                                       {service.features.map((feature) => (
                                         <span
                                           key={feature}
-                                          className={`px-2 py-1 text-xs rounded-full border transition-colors ${hoveredService === service.title
-                                            ? "bg-primary/10 text-primary border-primary/20"
-                                            : "bg-primary/10 text-primary border-primary/20 group-hover:bg-primary/20"
+                                          className={`px-2.5 py-1 text-[9px] font-bold uppercase tracking-wider rounded-full border transition-colors ${hoveredService === service.title
+                                            ? "bg-orange-50 text-orange-600 border-orange-100"
+                                            : "bg-slate-50 text-slate-500 border-slate-100 group-hover:bg-orange-50 group-hover:text-orange-600 group-hover:border-orange-100"
                                             }`}
                                         >
                                           {feature}
