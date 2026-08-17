@@ -522,11 +522,11 @@ const ContactInfo = () => {
                 display: "flex",
                 alignItems: "flex-start",
                 gap: "0.65rem",
-                color: "rgba(var(--silver-rgb), 0.73)",
+                color: "#E2E8F0",
                 fontSize: "0.82rem",
               }}
             >
-              <span style={{ color: "rgba(var(--primary-rgb), 0.6)", marginTop: 2, flexShrink: 0 }}>{item.icon}</span>
+              <span style={{ color: "var(--primary-hex)", marginTop: 2, flexShrink: 0 }}>{item.icon}</span>
               {item.value}
             </div>
           )
@@ -548,7 +548,7 @@ const ContactInfo = () => {
         >
           Service Areas
         </h5>
-        <p style={{ fontSize: "0.78rem", color: "rgba(var(--silver-rgb), 0.6)", lineHeight: 1.7 }}>{contact.areas}</p>
+        <p style={{ fontSize: "0.78rem", color: "#CBD5E1", lineHeight: 1.7 }}>{contact.areas}</p>
       </div>
     </div>
   );
@@ -579,9 +579,9 @@ const OfficeHours = ({ hours }: { hours: any }) => (
         { day: "Saturday", val: hours.saturday },
         { day: "Sunday", val: hours.sunday },
       ].map((row) => (
-        <div key={row.day} style={{ display: "flex", justifyContent: "space-between", color: "rgba(var(--silver-rgb), 0.73)" }}>
+        <div key={row.day} style={{ display: "flex", justifyContent: "space-between", color: "#E2E8F0" }}>
           <span>{row.day}</span>
-          <span style={{ color: "rgba(var(--primary-rgb), 0.8)" }}>{row.val}</span>
+          <span style={{ color: "var(--primary-hex)" }}>{row.val}</span>
         </div>
       ))}
     </div>
@@ -639,7 +639,7 @@ const CertificationsGrid = () => {
                 <span style={{ fontSize: "0.7rem", fontWeight: 700, color: GOLD, display: "block", fontFamily: "var(--font-body)" }}>
                   {cert.cert}
                 </span>
-                <span style={{ fontSize: "0.62rem", color: "rgba(var(--silver-rgb), 0.47)" }}>{cert.number}</span>
+                <span style={{ fontSize: "0.62rem", color: "#94A3B8" }}>{cert.number}</span>
               </div>
             </motion.div>
           );
@@ -676,7 +676,7 @@ const LegacyMarquee = () => {
             {texts.map((text, j) => (
               <span key={j} style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
                 <span style={{ color: "rgba(var(--primary-rgb), 0.33)" }}><Icons.Sparkle /></span>
-                <span style={{ fontSize: "0.75rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "rgba(var(--silver-rgb), 0.33)", fontFamily: "var(--font-body)" }}>
+                <span style={{ fontSize: "0.75rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "rgba(255, 255, 255, 0.4)", fontFamily: "var(--font-body)" }}>
                   {text}
                 </span>
               </span>
