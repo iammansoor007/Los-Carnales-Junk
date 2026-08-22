@@ -309,17 +309,6 @@ const Services = () => {
                   <ArrowRight className="w-5 h-5" />
                 </motion.a>
 
-                {/* Secondary Button */}
-                <motion.a
-                  href="tel:+1234567890"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-bold transition-all duration-300"
-                  style={{ background: "transparent", color: "#FFFFFF", border: "2px solid rgba(255, 255, 255, 0.4)" }}
-                >
-                  <Phone className="w-5 h-5" />
-                  Call Now
-                </motion.a>
               </div>
             </div>
           </div>

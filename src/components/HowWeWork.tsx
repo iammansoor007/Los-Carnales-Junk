@@ -550,11 +550,11 @@ const StatCounter = ({
       onMouseLeave={() => setIsHovered(false)}
       className="text-center group cursor-pointer"
     >
-      <div className="relative inline-block">
+      <div className="relative inline-block max-w-full">
         <motion.div
-          className="text-4xl md:text-5xl font-black text-primary relative z-10"
+          className={`${value.length > 8 ? "text-xl sm:text-2xl md:text-3xl" : "text-4xl md:text-5xl"} font-black text-primary relative z-10 whitespace-nowrap`}
           animate={{
-            scale: isHovered ? 1.1 : 1,
+            scale: isHovered ? 1.05 : 1,
             y: isHovered ? -2 : 0,
           }}
         >
@@ -764,9 +764,9 @@ const CTASection = memo(({ cta }: CTASectionProps) => {
                                           px-6 py-3 rounded-full font-bold transition-all duration-300 shadow-lg
                                           flex items-center justify-center gap-2
                                           ${button.primary
-                      ? 'bg-primary text-dark hover:bg-secondary'
-                      : 'bg-transparent text-white border-2 border-white/20 hover:bg-white/5'
-                    }
+                        ? 'bg-primary text-white hover:bg-secondary shadow-[0_10px_40px_rgba(0,0,0,0.3)]'
+                        : 'bg-transparent text-white border-2 border-white/20 hover:bg-white/5'
+                      }
                                       `}
                 >
                   {button.text}

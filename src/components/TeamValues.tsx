@@ -312,21 +312,7 @@ const Leadership = () => {
                 </p>
               ))}
 
-              <div className="flex items-center gap-4 mt-8">
 
-                <motion.a
-                  href={`mailto:${ceo.social.email}`}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="p-3 rounded-full bg-primary/5 text-primary hover:bg-primary/10 transition-colors"
-                  aria-label="Email"
-                >
-                  <Icons.Mail />
-                </motion.a>
-                <span className="text-sm text-muted-foreground ml-2">
-                  {ceo.social.email}
-                </span>
-              </div>
             </div>
           </div>
         </div>

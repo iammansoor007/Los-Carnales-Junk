@@ -208,26 +208,7 @@ const Portfolio = () => {
         </motion.div>
 
         {/* View All Action */}
-        <div className="mt-16 md:mt-20 pt-16 md:pt-20 border-t border-border flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="text-center md:text-left">
-            <h4 className="text-xl md:text-2xl font-black uppercase italic tracking-tight text-foreground font-heading">
-              Ready to see more?
-            </h4>
-            <p className="text-muted-foreground text-[10px] md:text-sm uppercase tracking-widest mt-1 font-body">
-              Browse our complete archive of heavy duty hauling and cleanout operations
-            </p>
-          </div>
-          <motion.a
-            href="#contact"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-            className="group w-full md:w-auto inline-flex items-center justify-center gap-4 md:gap-6 bg-gradient-to-r from-primary to-secondary text-dark px-6 md:px-10 py-4 md:py-5 font-black uppercase tracking-[0.2em] shadow-lg shadow-primary/15 transition-all hover:opacity-90"
-          >
-            <span>Load More Projects</span>
-            <div className="hidden md:block w-8 h-[2px] bg-current transform group-hover:w-12 transition-all" />
-            <ArrowRight className="md:hidden w-4 h-4" />
-          </motion.a>
-        </div>
+
       </div>
     </section>
   );
