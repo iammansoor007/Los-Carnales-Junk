@@ -317,7 +317,7 @@ const CoatingInquiryForm = () => {
                             style={{ background: "#F8FAFC", border: "1px solid #E2E8F0" }}
                             onFocus={(e) => e.currentTarget.style.borderColor = "rgba(var(--primary-rgb), 0.5)"}
                             onBlur={(e) => e.currentTarget.style.borderColor = "#E2E8F0"}
-                            placeholder="123 Main St, Canton, MI"
+                            placeholder="123 Main St, San Jose, CA"
                             required
                           />
                         </div>

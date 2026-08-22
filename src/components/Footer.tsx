@@ -819,7 +819,6 @@ const Footer = () => {
 
           {/* Col 3 – Contact + Hours + Certs */}
           <div className="footer-reveal md:col-span-2 lg:col-span-1">
-            <ContactInfo />
             {hours && <OfficeHours hours={hours} />}
             <CertificationsGrid />
           </div>
