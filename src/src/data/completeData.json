@@ -19,10 +19,9 @@
       },
       {
         "title": "HEAVY HAULING & DEBRIS",
-        "description": "Construction debris, demolition cleanup, and dump truck services for contractors.",
+        "description": "Demolition cleanup, dump truck services, and contractor hauling.",
         "icon": "ClipboardCheck",
         "items": [
-          "Construction Debris Removal",
           "Demolition Cleanup",
           "Dump Truck Services",
           "Contractor Hauling"
@@ -34,17 +33,17 @@
         ]
       },
       {
-        "title": "MATERIALS & AGGREGATE",
-        "description": "Dirt, gravel, aggregate hauling, and landscape material delivery.",
+        "title": "WINDOWS, DOORS & PAINTING",
+        "description": "Professional window installation, door installation, and painting projects.",
         "icon": "Sun",
         "items": [
-          "Dirt Hauling",
-          "Gravel Hauling",
-          "Aggregate Hauling",
-          "Landscape Material Delivery"
+          "Window Installation",
+          "Door Installation",
+          "Interior Painting",
+          "Exterior Painting"
         ],
         "features": [
-          "Heavy Duty Fleet",
+          "Quality Workmanship",
           "Residential & Commercial",
           "Dependable Results"
         ]
@@ -101,9 +100,9 @@
     ],
     "cta": {
       "title": "Get Your Free Estimate Today",
-      "description": "Heavy duty hauling and junk removal for residential, commercial, and contractor clients across the Bay Area and San Jose.",
+      "description": "Heavy duty hauling, junk removal, windows, doors, and painting for residential and commercial clients across the Bay Area and San Jose.",
       "buttonText": "Call Now",
-      "buttonLink": "tel:+14081234567"
+      "buttonLink": "tel:+12096841072"
     },
     "ctaButton": {
       "label": "Get Free Quote",
@@ -118,11 +117,11 @@
       "Bigger Trucks.",
       "Serving San Jose & The Bay Area"
     ],
-    "description": "Heavy duty hauling and junk removal company serving San Jose, CA and the surrounding Bay Area. Free estimates. On time, every time.",
+    "description": "Heavy duty hauling and junk removal company serving San Jose, CA and the surrounding Bay Area. We also install windows, doors, and handle painting projects. Free estimates. On time, every time.",
     "buttons": [
       {
         "text": "Call Now",
-        "href": "tel:+14081234567",
+        "href": "tel:+12096841072",
         "primary": true,
         "icon": "FiArrowRight"
       },
@@ -145,7 +144,7 @@
         "icon": "FiMessageSquare"
       },
       {
-        "value": "(408) 123-4567",
+        "value": "(209) 684-1072",
         "label": "Call Now",
         "icon": "FiArrowRight"
       }
@@ -158,7 +157,7 @@
       "highlight": "Los Carnales Junk Remover",
       "suffix": ""
     },
-    "description": "We're a heavy duty hauling and junk removal company built on strength, reliability, and no-nonsense service. Based in <span class=\"font-semibold text-primary\">San Jose, California</span>, we specialize in residential and commercial junk removal, construction debris hauling, demolition cleanup, dump truck services, and landscape material delivery. Nothing we can't haul. Nothing we can't handle.",
+    "description": "We're a heavy duty hauling and junk removal company built on strength, reliability, and no-nonsense service. Based in <span class=\"font-semibold text-primary\">San Jose, California</span>, we specialize in residential and commercial junk removal, demolition cleanup, dump truck services, window installation, door installation, and painting projects. Nothing we can't haul. Nothing we can't handle.",
     "image": {
       "src": "LosCarnalesCrew",
       "alt": "Los Carnales Junk Remover professional crew and heavy duty fleet",
@@ -184,7 +183,7 @@
     "buttons": [
       {
         "text": "CALL FOR FREE ESTIMATE",
-        "href": "tel:+14081234567",
+        "href": "tel:+12096841072",
         "primary": true
       },
       {
@@ -206,9 +205,9 @@
       "suffix": ""
     },
     "description": [
-      "Los Carnales Junk Remover was founded on a simple belief: when people need stuff hauled away, they shouldn't have to worry about whether the job is too big, too messy, or too complicated. Homeowners staring at garages full of junk. Contractors drowning in construction debris. Property managers facing full property cleanouts. Landscapers needing materials delivered fast. Everyone had the same problem — finding a hauler who would actually show up, work hard, and charge a fair price. That's where we come in.",
-      "We built Los Carnales Junk Remover with a heavy duty fleet and a no-nonsense work ethic. Dump trucks ready for the biggest jobs. A team that treats every load like family. And a commitment to doing what we say we'll do — on time, every time. From dirt, gravel, and aggregate hauling for contractors to complete estate cleanouts for families, we bring Carnales strength to every single job.",
-      "Today, Los Carnales Junk Remover proudly serves the Bay Area — San Jose and surrounding communities — handling residential junk removal, commercial cleanouts, construction debris, demolition cleanup, and landscape material delivery with the same dependable, professional service that built our reputation. Call or text for your free estimate. Nothing we can't haul. Nothing we can't handle."
+      "Los Carnales Junk Remover was founded on a simple belief: when people need stuff hauled away, they shouldn't have to worry about whether the job is too big, too messy, or too complicated. Homeowners staring at garages full of junk. Contractors drowning in demolition debris. Property managers facing full property cleanouts. Everyone had the same problem — finding a hauler who would actually show up, work hard, and charge a fair price. That's where we come in.",
+      "We built Los Carnales Junk Remover with a heavy duty fleet and a no-nonsense work ethic. Dump trucks ready for the biggest jobs. A team that treats every load like family. And a commitment to doing what we say we'll do — on time, every time. But we didn't stop at hauling. We saw our customers needed more — old windows replaced, new doors installed, rooms that needed fresh paint. So we added those services too.",
+      "Today, Los Carnales Junk Remover proudly serves the Bay Area — San Jose and surrounding communities — handling residential junk removal, commercial cleanouts, demolition cleanup, window installation, door installation, and painting projects with the same dependable, professional service that built our reputation. Call or text (209) 684-1072 for your free estimate. Nothing we can't haul. Nothing we can't handle."
     ],
     "image": {
       "src": "LosCarnalesFounder",
@@ -236,19 +235,19 @@
   "services": {
     "badge": "Our Services",
     "headline": {
-      "prefix": "Heavy Duty Hauling",
-      "highlight": "& Junk Removal",
+      "prefix": "Heavy Duty Hauling,",
+      "highlight": "Junk Removal & More",
       "suffix": ""
     },
     "description": [
-      "Los Carnales Junk Remover offers residential and commercial junk removal, construction debris hauling, demolition cleanup, dump truck services, and landscape material delivery across the Bay Area.",
-      "No job too big. No job too small. From single-item pickups to full property cleanouts and aggregate deliveries — we handle it all with Carnales strength."
+      "Los Carnales Junk Remover offers residential and commercial junk removal, demolition cleanup, dump truck services, window installation, door installation, and painting projects across the Bay Area.",
+      "No job too big. No job too small. From single-item pickups to full property cleanouts, window replacements, door installations, and complete painting projects — we handle it all with Carnales strength."
     ],
     "stats": [
       {
         "value": 3,
         "suffix": "",
-        "label": "Core Markets"
+        "label": "Core Services"
       },
       {
         "value": 7,
@@ -276,21 +275,9 @@
       },
       {
         "number": "02",
-        "title": "Construction Debris Removal",
-        "description": "Removal of debris from construction and renovation projects. Drywall, lumber, concrete, roofing materials, and scrap.",
-        "icon": "Building2",
-        "tag": "Contractor",
-        "features": [
-          "Heavy Duty Fleet",
-          "On Time, Every Time",
-          "Competitive Pricing"
-        ]
-      },
-      {
-        "number": "03",
         "title": "Demolition Cleanup",
         "description": "Complete cleaning and hauling after demolition work. We clear the mess so you can move forward fast.",
-        "icon": "Hammer",
+        "icon": "Building2",
         "tag": "Heavy Duty",
         "features": [
           "Large-Scale Hauling",
@@ -299,10 +286,10 @@
         ]
       },
       {
-        "number": "04",
+        "number": "03",
         "title": "Dump Truck Services",
         "description": "Professional dump truck services for contractors, construction companies, and industrial clients across the Bay Area.",
-        "icon": "Shield",
+        "icon": "Hammer",
         "tag": "Industrial",
         "features": [
           "Heavy Duty Fleet",
@@ -311,39 +298,51 @@
         ]
       },
       {
-        "number": "05",
-        "title": "Dirt, Gravel & Aggregate Hauling",
-        "description": "Transportation and hauling of construction materials including dirt, gravel, sand, and aggregate for any size project.",
-        "icon": "Droplets",
-        "tag": "Materials",
-        "features": [
-          "Bulk Delivery",
-          "Residential & Commercial",
-          "Fast Turnaround"
-        ]
-      },
-      {
-        "number": "06",
-        "title": "Landscape Material Delivery",
-        "description": "Delivery of mulch, topsoil, stone, and other landscape materials for residential and commercial projects.",
-        "icon": "Wrench",
-        "tag": "Landscaping",
-        "features": [
-          "Direct Delivery",
-          "Quality Materials",
-          "Flexible Scheduling"
-        ]
-      },
-      {
-        "number": "07",
+        "number": "04",
         "title": "Property Cleanouts",
         "description": "Complete cleanout services for homes, businesses, rental properties, and estates. We do all the heavy lifting.",
-        "icon": "Tool",
+        "icon": "Shield",
         "tag": "Cleanout",
         "features": [
           "Full Property Cleanouts",
           "Estate & Rental Ready",
           "Fast & Thorough"
+        ]
+      },
+      {
+        "number": "05",
+        "title": "Window Installation",
+        "description": "Professional window installation for residential and commercial properties. Energy efficient, properly sealed, and built to last.",
+        "icon": "Droplets",
+        "tag": "Installation",
+        "features": [
+          "Residential & Commercial",
+          "Energy Efficient",
+          "Quality Workmanship"
+        ]
+      },
+      {
+        "number": "06",
+        "title": "Door Installation",
+        "description": "Interior and exterior door installation. Entry doors, patio doors, and interior doors installed right the first time.",
+        "icon": "Wrench",
+        "tag": "Installation",
+        "features": [
+          "Entry & Patio Doors",
+          "Interior Doors",
+          "Professional Installation"
+        ]
+      },
+      {
+        "number": "07",
+        "title": "Painting Projects",
+        "description": "Interior and exterior painting for homes and businesses. Fresh, clean, and professionally finished — every time.",
+        "icon": "Tool",
+        "tag": "Painting",
+        "features": [
+          "Interior Painting",
+          "Exterior Painting",
+          "Residential & Commercial"
         ]
       },
       {
@@ -384,17 +383,17 @@
       }
     ],
     "cta": {
-      "title": "Not Sure If We Can Haul It?",
-      "description": "If it needs to go, we can haul it. Call or text for your free estimate today — no job too big or too small.",
+      "title": "Not Sure If We Can Handle It?",
+      "description": "If it needs to go, we can haul it. If it needs installing or painting, we can do that too. Call or text for your free estimate today.",
       "buttonText": "Call Now",
-      "buttonLink": "tel:+14081234567"
+      "buttonLink": "tel:+12096841072"
     }
   },
   "whyChooseUs": {
     "section": {
       "badge": "WHY CHOOSE US",
       "headline": "What Makes <span class=\"text-primary\">Los Carnales Junk Remover</span> Different",
-      "description": "When you need heavy duty hauling and junk removal, you need a team with the strength, the fleet, and the work ethic to get it done right — the first time."
+      "description": "When you need heavy duty hauling, junk removal, or home improvement work, you need a team with the strength, the fleet, and the work ethic to get it done right — the first time."
     },
     "features": [
       {
@@ -410,7 +409,7 @@
       {
         "icon": "Globe",
         "title": "Residential & Commercial",
-        "description": "Homeowners, contractors, property managers, landscapers, and industrial clients — we serve them all."
+        "description": "Homeowners, contractors, property managers, and businesses — we serve them all."
       },
       {
         "icon": "Clock",
@@ -425,7 +424,7 @@
       {
         "icon": "Check",
         "title": "No Job Too Big or Too Small",
-        "description": "Single-item pickup to full demolition cleanup — we bring the same Carnales strength to every job."
+        "description": "Single-item pickup to full demolition cleanup, window installation, door installation, and painting — we do it all."
       }
     ],
     "stats": [
@@ -445,7 +444,7 @@
         "label": "Estimates"
       },
       {
-        "value": "(408) 123-4567",
+        "value": "(209) 684-1072",
         "suffix": "",
         "label": "Call Now"
       }
@@ -453,7 +452,7 @@
     "cta": {
       "badge": "GET STARTED",
       "title": "Ready to Haul <span class=\"\">It Away?</span>",
-      "description": "Call or text (408) 123-4567 for your free estimate today. Carnales strength. Carnales service. Carnales results.",
+      "description": "Call or text (209) 684-1072 for your free estimate today. Carnales strength. Carnales service. Carnales results.",
       "trustBadges": [
         "Reliable & Professional",
         "Free Estimates",
@@ -462,7 +461,7 @@
       "buttons": [
         {
           "text": "Call Now",
-          "href": "tel:+14081234567",
+          "href": "tel:+12096841072",
           "primary": true
         },
         {
@@ -481,14 +480,14 @@
     "projects": [
       {
         "number": "01",
-        "title": "San Jose Construction Debris Haul",
-        "category": "Construction",
+        "title": "San Jose Garage Cleanout",
+        "category": "Junk Removal",
         "image": "portfolio1",
         "location": "San Jose, CA",
         "year": "2025",
         "accent": "from-primary to-primary/80",
-        "scope": "Construction Debris Removal",
-        "desc": "Full site cleanup after major renovation. Multiple truckloads of drywall, lumber, and scrap removed."
+        "scope": "Full Garage Cleanout",
+        "desc": "Years of accumulated furniture, tools, and clutter cleared in one afternoon."
       },
       {
         "number": "02",
@@ -503,14 +502,14 @@
       },
       {
         "number": "03",
-        "title": "Fremont Aggregate Delivery",
-        "category": "Materials",
+        "title": "Fremont Window Installation",
+        "category": "Installation",
         "image": "portfolio3",
         "location": "Fremont, CA",
         "year": "2024",
         "accent": "from-primary/90 to-primary/60",
-        "scope": "Gravel & Dirt Hauling",
-        "desc": "Multiple loads of gravel and aggregate delivered on schedule for large construction project."
+        "scope": "Full Window Replacement",
+        "desc": "Energy efficient window installation completed across entire residential property."
       },
       {
         "number": "04",
@@ -525,14 +524,14 @@
       },
       {
         "number": "05",
-        "title": "San Jose Landscape Delivery",
-        "category": "Landscaping",
+        "title": "San Jose Painting Project",
+        "category": "Painting",
         "image": "portfolio5",
         "location": "San Jose, CA",
         "year": "2024",
         "accent": "from-primary/80 to-primary/60",
-        "scope": "Mulch & Topsoil Delivery",
-        "desc": "Bulk landscape material delivery for residential landscaping project — on time and on budget."
+        "scope": "Interior & Exterior Painting",
+        "desc": "Full interior and exterior painting project completed on time and on budget."
       }
     ],
     "button": {
@@ -544,8 +543,8 @@
     "section": {
       "badge": "Client Testimonials",
       "headline": "What Our Customers Say",
-      "description": "Hear from homeowners, contractors, and businesses who trust Los Carnales Junk Remover for heavy duty hauling across the Bay Area.",
-      "featured": "Trusted Hauling & Junk Removal in San Jose & The Bay Area"
+      "description": "Hear from homeowners, contractors, and businesses who trust Los Carnales Junk Remover across the Bay Area.",
+      "featured": "Trusted Hauling, Junk Removal & Home Services in San Jose & The Bay Area"
     },
     "testimonials": [
       {
@@ -554,7 +553,7 @@
         "position": "General Contractor",
         "company": "San Jose",
         "avatar": "DR",
-        "text": "Los Carnales is my go-to for construction debris removal. They show up on time, work fast, and their pricing is fair. Nothing they can't handle."
+        "text": "Los Carnales is my go-to for demolition cleanup. They show up on time, work fast, and their pricing is fair. Nothing they can't handle."
       },
       {
         "id": 2,
@@ -567,10 +566,10 @@
       {
         "id": 3,
         "name": "Tony S.",
-        "position": "Demolition Contractor",
+        "position": "Homeowner",
         "company": "Bay Area",
         "avatar": "TS",
-        "text": "These guys are the real deal. Heavy duty fleet, hard working crew, and they never complain about the size of the job. My kind of company."
+        "text": "These guys replaced all the windows in my house and painted the whole interior. Heavy duty fleet, hard working crew, and they never complain about the size of the job."
       },
       {
         "id": 4,
@@ -578,22 +577,22 @@
         "position": "Homeowner",
         "company": "San Jose",
         "avatar": "KW",
-        "text": "Called Los Carnales for a garage cleanout and they had it done in hours. Fair price, friendly crew, and they took everything. Can't ask for more."
+        "text": "Called Los Carnales for a garage cleanout and they had it done in hours. Then they installed a new front door. Fair price, friendly crew. Can't ask for more."
       },
       {
         "id": 5,
         "name": "Los Carnales Team",
-        "position": "Heavy Duty Hauling",
+        "position": "Heavy Duty Hauling & Home Services",
         "company": "Los Carnales Junk Remover",
         "avatar": "LC",
-        "text": "We built Los Carnales Junk Remover to give the Bay Area a hauler they can count on. No job too big, no job too small. Carnales strength. Carnales service. Carnales results."
+        "text": "We built Los Carnales Junk Remover to give the Bay Area a team they can count on. Hauling, junk removal, windows, doors, painting — no job too big, no job too small. Carnales strength. Carnales service. Carnales results."
       }
     ],
     "videos": [
       {
         "id": "v1",
         "videoId": "dQw4w9WgXcQ",
-        "title": "Construction Debris Haul-Off",
+        "title": "Demolition Cleanup Project",
         "name": "Dave R."
       },
       {
@@ -605,14 +604,14 @@
       {
         "id": "v3",
         "videoId": "dQw4w9WgXcQ",
-        "title": "Demolition Cleanup Project",
+        "title": "Window Installation Project",
         "name": "Tony S."
       },
       {
         "id": "v4",
         "videoId": "dQw4w9WgXcQ",
-        "title": "Dump Truck Services Overview",
-        "name": "Los Carnales Team"
+        "title": "Junk Removal & Door Installation",
+        "name": "Karen W."
       }
     ],
     "stats": {
@@ -625,7 +624,7 @@
     "section": {
       "badge": "Knowledge Base",
       "headline": "Frequently Asked Questions",
-      "description": "Straight answers about our junk removal, heavy hauling, and dump truck services."
+      "description": "Straight answers about our junk removal, heavy hauling, window installation, door installation, and painting services."
     },
     "categories": [
       {
@@ -644,9 +643,14 @@
         "icon": "Shield"
       },
       {
-        "id": "materials",
-        "label": "Materials",
+        "id": "installation",
+        "label": "Windows & Doors",
         "icon": "Hammer"
+      },
+      {
+        "id": "painting",
+        "label": "Painting",
+        "icon": "Tool"
       }
     ],
     "items": [
@@ -654,7 +658,7 @@
         "id": 1,
         "category": "junk",
         "question": "What can you haul away?",
-        "answer": "Everything. Furniture, appliances, construction debris, demolition waste, yard debris, estate cleanouts, and commercial junk. Nothing we can't haul.",
+        "answer": "Everything. Furniture, appliances, demolition waste, yard debris, estate cleanouts, and commercial junk. Nothing we can't haul.",
         "metadata": [
           {
             "label": "Residential",
@@ -670,7 +674,7 @@
         "id": 2,
         "category": "junk",
         "question": "Do you offer free estimates?",
-        "answer": "Yes. Free, no-obligation estimates on every job. Call or text (408) 123-4567 for your quote — no hidden fees, ever.",
+        "answer": "Yes. Free, no-obligation estimates on every job. Call or text (209) 684-1072 for your quote — no hidden fees, ever.",
         "metadata": [
           {
             "label": "Cost",
@@ -702,7 +706,7 @@
         "id": 4,
         "category": "hauling",
         "question": "Do you work with contractors?",
-        "answer": "Absolutely. We're contractor-friendly — construction debris removal, demolition cleanup, dump truck services, and aggregate hauling built for the trades.",
+        "answer": "Absolutely. We're contractor-friendly — demolition cleanup, dump truck services, and hauling built for the trades.",
         "metadata": [
           {
             "label": "Contractors",
@@ -732,33 +736,33 @@
       },
       {
         "id": 6,
-        "category": "materials",
-        "question": "Do you deliver landscape materials?",
-        "answer": "Yes. We deliver mulch, topsoil, stone, gravel, sand, and aggregate for residential and commercial landscaping projects.",
+        "category": "installation",
+        "question": "Do you install windows and doors?",
+        "answer": "Yes. We provide professional window installation and door installation for residential and commercial properties. Energy efficient, properly sealed, and built to last.",
         "metadata": [
           {
-            "label": "Materials",
-            "value": "Mulch, soil, stone, gravel"
+            "label": "Windows",
+            "value": "Residential & commercial"
           },
           {
-            "label": "Delivery",
-            "value": "Direct to site"
+            "label": "Doors",
+            "value": "Entry, patio & interior"
           }
         ]
       },
       {
         "id": 7,
-        "category": "hauling",
-        "question": "How big is your fleet?",
-        "answer": "We run a heavy duty fleet with multiple dump trucks ready for jobs of any size. No job too big — we bring Carnales strength every time.",
+        "category": "painting",
+        "question": "Do you do painting projects?",
+        "answer": "Yes. We handle interior and exterior painting for homes and businesses. Fresh, clean, and professionally finished — every time.",
         "metadata": [
           {
-            "label": "Fleet Type",
-            "value": "Heavy duty dump trucks"
+            "label": "Interior",
+            "value": "Yes"
           },
           {
-            "label": "Capacity",
-            "value": "Multiple trucks available"
+            "label": "Exterior",
+            "value": "Yes"
           }
         ]
       },
@@ -796,17 +800,17 @@
       },
       {
         "id": 10,
-        "category": "materials",
-        "question": "Do you haul dirt and gravel?",
-        "answer": "Yes. Dirt, gravel, aggregate, sand — we haul and deliver bulk materials for contractors, landscapers, and residential projects.",
+        "category": "installation",
+        "question": "How big is your fleet?",
+        "answer": "We run a heavy duty fleet with multiple dump trucks ready for jobs of any size. No job too big — we bring Carnales strength every time.",
         "metadata": [
           {
-            "label": "Dirt",
-            "value": "Yes"
+            "label": "Fleet Type",
+            "value": "Heavy duty dump trucks"
           },
           {
-            "label": "Gravel & Aggregate",
-            "value": "Yes"
+            "label": "Capacity",
+            "value": "Multiple trucks available"
           }
         ]
       }
@@ -817,7 +821,7 @@
       "buttons": [
         {
           "text": "Call Now",
-          "href": "tel:+14081234567",
+          "href": "tel:+12096841072",
           "primary": true
         },
         {
@@ -832,7 +836,7 @@
     "section": {
       "badge": "GET STARTED",
       "headline": "Request Your <span class=\"font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-primary/80\">Free Estimate Today</span>",
-      "description": "Heavy duty hauling, junk removal, and dump truck services. Free estimates — no hidden fees, no job too big."
+      "description": "Heavy duty hauling, junk removal, windows, doors, and painting. Free estimates — no hidden fees, no job too big."
     },
     "services": [
       {
@@ -843,33 +847,39 @@
       },
       {
         "id": 2,
-        "title": "Construction Debris",
-        "desc": "Renovation & demo cleanup",
+        "title": "Demolition Cleanup",
+        "desc": "Heavy duty hauling",
         "icon": "⎔"
       },
       {
         "id": 3,
         "title": "Dump Truck Services",
-        "desc": "Heavy duty hauling",
+        "desc": "Contractor friendly",
         "icon": "⌖"
       },
       {
         "id": 4,
-        "title": "Dirt & Gravel Hauling",
-        "desc": "Bulk material delivery",
+        "title": "Property Cleanouts",
+        "desc": "Estates, rentals, businesses",
         "icon": "⌘"
       },
       {
         "id": 5,
-        "title": "Property Cleanouts",
-        "desc": "Estates, rentals, businesses",
+        "title": "Window Installation",
+        "desc": "Residential & commercial",
         "icon": "⚡"
       },
       {
         "id": 6,
-        "title": "Landscape Materials",
-        "desc": "Mulch, soil, stone delivery",
+        "title": "Door Installation",
+        "desc": "Entry, patio & interior",
         "icon": "◈"
+      },
+      {
+        "id": 7,
+        "title": "Painting Projects",
+        "desc": "Interior & exterior",
+        "icon": "◉"
       }
     ],
     "projectTypes": [
@@ -908,7 +918,7 @@
         "label": "Future Project"
       }
     ],
-    "email": "loscarnalesjunk@gmail.com",
+    "email": "",
     "success": {
       "title": "Estimate Request Received",
       "message": "Your project details have been sent to the team at Los Carnales Junk Remover.",
@@ -920,7 +930,7 @@
     "company": {
       "name": "Los Carnales Junk Remover",
       "tagline": "NOTHING WE CAN'T HAUL. NOTHING WE CAN'T HANDLE.",
-      "description": "Heavy duty hauling and junk removal serving San Jose, CA and the surrounding Bay Area. Construction debris, demolition cleanup, dump truck services, junk removal, and landscape material delivery. Free estimates. On time, every time."
+      "description": "Heavy duty hauling and junk removal serving San Jose, CA and the surrounding Bay Area. Demolition cleanup, dump truck services, junk removal, window installation, door installation, and painting projects. Free estimates. On time, every time."
     },
     "services": {
       "title": "Our Services",
@@ -931,33 +941,33 @@
           "icon": "Home"
         },
         {
-          "label": "Construction Debris Removal",
-          "href": "/construction-debris",
-          "icon": "Building2"
-        },
-        {
           "label": "Demolition Cleanup",
           "href": "/demolition-cleanup",
-          "icon": "Hammer"
+          "icon": "Building2"
         },
         {
           "label": "Dump Truck Services",
           "href": "/dump-truck",
-          "icon": "Shield"
-        },
-        {
-          "label": "Dirt & Gravel Hauling",
-          "href": "/dirt-gravel",
-          "icon": "Droplets"
-        },
-        {
-          "label": "Landscape Material Delivery",
-          "href": "/landscape-materials",
-          "icon": "Wrench"
+          "icon": "Hammer"
         },
         {
           "label": "Property Cleanouts",
           "href": "/property-cleanouts",
+          "icon": "Shield"
+        },
+        {
+          "label": "Window Installation",
+          "href": "/window-installation",
+          "icon": "Droplets"
+        },
+        {
+          "label": "Door Installation",
+          "href": "/door-installation",
+          "icon": "Wrench"
+        },
+        {
+          "label": "Painting Projects",
+          "href": "/painting",
           "icon": "Tool"
         },
         {
@@ -1004,8 +1014,8 @@
     },
     "contact": {
       "title": "Contact Us",
-      "email": "loscarnalesjunk@gmail.com",
-      "phone": "+1 (408) 123-4567",
+      "email": "",
+      "phone": "+1 (209) 684-1072",
       "address": "San Jose, California",
       "emergency": "Call or Text Anytime",
       "areas": "Serving San Jose & The Bay Area"
@@ -1061,14 +1071,9 @@
     ],
     "social": [
       {
-        "platform": "Email",
-        "icon": "Mail",
-        "href": "mailto:loscarnalesjunk@gmail.com"
-      },
-      {
         "platform": "Phone",
         "icon": "Phone",
-        "href": "tel:+14081234567"
+        "href": "tel:+12096841072"
       },
       {
         "platform": "Facebook",
@@ -1109,7 +1114,7 @@
       "texts": [
         "NOTHING WE CAN'T HAUL. NOTHING WE CAN'T HANDLE.",
         "HEAVY DUTY FLEET • FREE ESTIMATES • ON TIME EVERY TIME",
-        "SERVING SAN JOSE & THE BAY AREA"
+        "SERVING SAN JOSE & THE BAY AREA • (209) 684-1072"
       ]
     }
   },
@@ -1117,23 +1122,22 @@
     "section": {
       "badge": "OUR LEADERSHIP",
       "headline": "Committed to <span class=\"text-primary\">Carnales Results</span>",
-      "description": "At Los Carnales Junk Remover, our leadership is driven by a singular mission: to deliver heavy duty hauling and junk removal services with strength, reliability, and no-nonsense professionalism across the Bay Area."
+      "description": "At Los Carnales Junk Remover, our leadership is driven by a singular mission: to deliver heavy duty hauling, junk removal, and home improvement services with strength, reliability, and no-nonsense professionalism across the Bay Area."
     },
     "ceo": {
       "name": "Los Carnales Junk Remover Team",
       "title": "OWNER & OPERATOR",
       "quotes": [
-        "We built Los Carnales Junk Remover because we saw contractors, homeowners, and businesses struggling to find a hauler who would actually show up, work hard, and charge a fair price. Nothing we can't haul. Nothing we can't handle."
+        "We built Los Carnales Junk Remover because we saw contractors, homeowners, and businesses struggling to find a team who would actually show up, work hard, and charge a fair price. Nothing we can't haul. Nothing we can't handle."
       ],
       "description": [
         "Los Carnales Junk Remover was founded with a heavy duty fleet and a no-nonsense work ethic. We understand what contractors need on a job site, what property managers expect from a cleanout crew, and what homeowners want when they're clearing out years of accumulated junk. Reliable service, competitive pricing, and on time every time — that's how we operate every single day.",
-        "Today, Los Carnales Junk Remover proudly serves San Jose, CA and the surrounding Bay Area with a comprehensive range of hauling services: residential and commercial junk removal, construction debris removal, demolition cleanup, dump truck services, dirt and gravel hauling, landscape material delivery, and complete property cleanouts. From single-item pickups to full-scale commercial projects, we bring Carnales strength, Carnales service, and Carnales results to every job."
+        "Today, Los Carnales Junk Remover proudly serves San Jose, CA and the surrounding Bay Area with a comprehensive range of services: residential and commercial junk removal, demolition cleanup, dump truck services, property cleanouts, window installation, door installation, and painting projects. From single-item pickups to full-scale commercial projects, we bring Carnales strength, Carnales service, and Carnales results to every job."
       ],
       "social": {
         "facebook": "#",
         "instagram": "#",
-        "tiktok": "#",
-        "email": "loscarnalesjunk@gmail.com"
+        "tiktok": "#"
       },
       "badges": {
         "top": "Heavy Duty Hauling",
